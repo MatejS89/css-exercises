@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
+  font-family: Roboto, sans-serif;
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
 }
 
 img {
@@ -12,16 +12,65 @@ img {
 }
 
 button {
-  font-family: Roboto, sans-serif;
+  background: #eee;
   border: none;
   border-radius: 8px;
-  background: #eee;
+  font-family: Roboto, sans-serif;
 }
 
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
+  margin-bottom: 16px;
   padding: 8px 24px;
   width: 400px;
-  margin-bottom: 16px;
+}
+
+.container-all {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.buttons > button {
+  padding: 10px;
+}
+
+.header > ul,
+.footer > ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  text-decoration: none;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
 }
