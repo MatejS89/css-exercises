@@ -1,59 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  margin: 0;
+  align-items: center;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
   display: flex;
-  align-items: center;
+  /* I'll give you this one for free lol */
+  font-family: Roboto, sans-serif;
   justify-content: center;
+  margin: 0;
 }
 
 .modal {
   background: white;
-  width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 15px;
+  width: 480px;
+  gap: 10px;
 }
 
 .icon {
+  align-items: center;
+  background: lavender;
+  border-radius: 50%;
   color: royalblue;
+  display: flex;
   font-size: 26px;
   font-weight: 700;
-  background: lavender;
-  width: 42px;
   height: 42px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  width: 42px;
+  flex-shrink: 0;
 }
 
 .close-button {
+  align-items: center;
   background: #eee;
+  border: 1px solid #eee;
   border-radius: 50%;
   color: #888;
-  font-weight: 400;
-  font-size: 16px;
-  height: 24px;
-  width: 24px;
   display: flex;
-  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  height: 24px;
   justify-content: center;
-  border: 1px solid #eee;
   padding: 0;
+  width: 24px;
 }
 
 button {
+  border-radius: 8px;
   cursor: pointer;
   padding: 8px 16px;
-  border-radius: 8px;
 }
 
 button.continue {
@@ -66,4 +71,30 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.top-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.middle > * {
+  margin: 10px 0;
+}
+
+.middle > .top-part {
+  margin-top: 0;
+}
+
+.top-part > .close-button {
+  align-self: center;
+}
+
+button.continue, button.cancel {
+  margin-bottom: 0;
 }
