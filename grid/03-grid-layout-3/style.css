@@ -56,7 +56,6 @@
 }
 
 .sidebar {
-  align-items: center;
   background-color: #c50208;
   display: grid;
   grid-area: sidebar;
